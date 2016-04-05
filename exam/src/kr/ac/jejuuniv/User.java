@@ -1,7 +1,7 @@
 package kr.ac.jejuuniv;
 
 public class User {
-	private String id;
+	private Long id;
 	private String name;
 	private String password;
 	private String password2;
