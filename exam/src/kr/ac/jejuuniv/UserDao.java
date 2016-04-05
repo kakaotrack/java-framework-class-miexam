@@ -9,6 +9,7 @@ import java.sql.SQLException;
 public class UserDao {
 
 	public User get(String id) throws ClassNotFoundException, SQLException {
+
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/jeju", "jeju", "jejupw");
 		String sql = "select id, name, password from userinfo where id = ?";
