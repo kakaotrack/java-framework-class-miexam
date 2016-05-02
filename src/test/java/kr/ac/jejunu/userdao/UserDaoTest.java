@@ -7,6 +7,9 @@ import java.sql.SQLException;
 import static org.junit.Assert.assertEquals;
 
 public class UserDaoTest {
+    public void setup() {
+    }
+
     @Test
     public void get() throws SQLException, ClassNotFoundException {
         UserDao userDao = new UserDao();
