@@ -1,9 +1,0 @@
-CREATE TABLE `product` (
-  `id` INT(11) NOT NULL AUTO_INCREMENT,
-  `title` VARCHAR(256) COLLATE utf8_bin DEFAULT NULL,
-  `price` INT(11) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-
-INSERT INTO `product` (`id`, `title`, `price`) VALUES ('1', '제주감귤', '15000'); 
-
