@@ -10,7 +10,7 @@ public class UserDao {
                 , "jeju", "jejupw");
         PreparedStatement preparedStatement =
                 connection.prepareStatement("select * from userinfo where id = ?");
-        preparedStatement.setLong(1, id);
+        preparedStatement.setInt(1, id);
 
         ResultSet resultSet = preparedStatement.executeQuery();
         resultSet.next();
@@ -23,7 +23,6 @@ public class UserDao {
         resultSet.close();
         preparedStatement.close();
         connection.close();
-        //리턴
         return user;
     }
 }
